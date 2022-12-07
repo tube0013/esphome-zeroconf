@@ -10,6 +10,9 @@
 #ifdef ARDUINO_ARCH_ESP8266
 #include <ESP8266mDNS.h>
 #endif
+#ifdef USE_ESP32
+#include "esphome/components/mdns/mdns_component.h"
+#endif
 
 namespace esphome {
 namespace zeroconf {

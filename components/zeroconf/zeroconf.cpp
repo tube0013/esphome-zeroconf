@@ -1,6 +1,9 @@
+#ifdef USE_ESP_IDF
 
 #include "esphome/core/log.h"
 #include "zeroconf.h"
+#include <mdns.h>
+#include <string>
 
 namespace esphome {
 namespace zeroconf {
